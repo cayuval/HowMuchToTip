@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How much to tip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="formField">
+                <label for="">Bill Amount</label>
+                <input type="number" id="bill" placeholder="bill amount">
+                <select name="" id="currency">
+                    <option name="" id="">$</option>
+                    <option name="" id="">€</option>
+                    <option name="" id="">&#x20AA</option>
+
+                </select>
+            </div>
+            <div class="formField">
+                <label for="">How mach would you like to tip?</label>
+                <input type="range" value="10" min="1" max="100" name="" id="tipRange"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output id="rangePrecentage">10</output>
+            </div>
+            <div class="formFieldButton">
+                <button id="TheButton">Show me the money!!</button>
+            </div>
+        </div>
+        <div id="howToTip">
+            Tip
+        </div>
+    </div>
+    <script src="howMuchToTip.js"></script>
+</body>
+
+</html>
