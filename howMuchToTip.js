@@ -8,6 +8,7 @@ let elCurrencySelect = document.getElementById("currency")
 
 //now - eventListeners
 elButton.addEventListener('click', () => {
+    console.log('yello');
     calculate(elTipInput.value)
 })
 
@@ -19,6 +20,9 @@ function calculate(tipPrecentage) {
     }
     let x = tipPrecentage / 100
     let tip = x * bill
+    if (tip % 1 !== 0) {
+        tip = tip.toFixed(2)
+    }
     reRender(tip)
 }
 function reRender(howMuchToTip) {
