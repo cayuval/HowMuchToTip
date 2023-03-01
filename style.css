@@ -59,7 +59,8 @@
     text-align-last: left;
 }
 
-#howToTip {
+#howToTip,
+#total {
     padding: 50px;
     width: 550px;
     text-align: center;
